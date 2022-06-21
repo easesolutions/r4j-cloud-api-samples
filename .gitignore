@@ -1,0 +1,12 @@
+# python environment and jetbrains pycharm .idea
+venv/
+.idea/
+.vscode/
+
+# credentials file and report directory
+report/*.html
+report/*.log
+
+# __pycache__
+*/__pycache__/
+*/*/__pycache__/

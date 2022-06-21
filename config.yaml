@@ -1,0 +1,13 @@
+settings:
+  cloud_env:
+    # Cloud
+    application_url: https://your-domain.atlassian.net
+    username: cloud-your-username
+    jira_api_token:  JIRAAPITOKEN
+    r4j_api_token: R4JCAPITOKEN
+
+  data_center_env:
+    # Data Center
+    application_url: https://www.mywebsite.com/jira/
+    username: data-center-username
+    password: data-center-password

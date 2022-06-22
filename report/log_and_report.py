@@ -35,7 +35,7 @@ def write_logging_server_response(response, message, error=False, type_error=Non
     else:
         method_status_endpoint = f"\t\t{response.request.method} {path_url} => Status code: {response.status_code}"
     response_content = f"\t\tResponse content: {response.json()}" \
-        if response.status_code != 400 else f"\t\t{response.content}"
+        if response.status_code < 400 else f"\t\t{response.content}"
     if not error:
         print(f"\t{message}")
         logging.info(f"\t{message}")
@@ -59,6 +59,10 @@ def write_logging_dry_run_message(message, request_body):
 def write_logging_simple_message(message):
     print(message)
     logging.info(message)
+
+def write_logging_error(message):
+    print(f"ERROR: {message}")
+    logging.error(message)    
 
 
 def create_item_on_current_level(data, a_label):

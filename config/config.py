@@ -30,8 +30,12 @@ class DataCenterSettings:
         env_obj = read_yaml_file(env_yml_file)
         env_settings = env_obj['settings']['data_center_env']
         self.application_url = env_settings['application_url']
-        self.username = env_settings['username']
-        self.password = env_settings['password']
+        if 'pat' in env_settings and env_settings['pat'] != '' and env_settings['pat'] is not None:
+            self.pat = env_settings['pat']
+        else:
+            self.username = env_settings['username']
+            self.password = env_settings['password']        
+            self.pat = ''
 
 
 CLOUD_ENV = CloudSettings(env_yml_file=YML_ENV)

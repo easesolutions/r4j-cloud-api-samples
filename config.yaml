@@ -11,3 +11,4 @@ settings:
     application_url: https://www.mywebsite.com/jira/
     username: data-center-username
     password: data-center-password
+    # pat: data-center-personal-access-token

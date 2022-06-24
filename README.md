@@ -45,6 +45,7 @@ Your *config.yaml* file should look something like this:
         application_url: https://www.mywebsite.com/jira/
         username: data-center-username
         password: data-center-password
+        # pat: data-center-personal-access-token
 
 ### Cloud instance configurations
   1. **application_url**: URL of your Cloud instance.
@@ -55,6 +56,7 @@ Your *config.yaml* file should look something like this:
   1. **application_url**: URL to the Jira Server or Data Center instance.
   2. **username**: User with READ access to the projects you want to migrate.
   3. **password**: Password for the user.
+  4. **pat**: Alternatively to providing the username and password, you can provide a [Personal Access Token (PAT)](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html)
 
 ## How to run the migration script 
 ### Optional: Clean up the tree

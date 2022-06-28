@@ -13,7 +13,7 @@ This repository exemplifies how to migrate the tree structure from a Jira Server
 
 
 ## Pre-requisites
-* A Jira Server or Data Center instance with R4J installed and a project containing an R4J Tree Structure
+* A Jira Server or Data Center instance with R4J 4.9 installed and a project containing an R4J Tree Structure
 * A Jira Cloud instance with R4J installed
 * A project migrated to the Cloud using [Jira Cloud Migration Assistant](https://support.atlassian.com/migration/docs/use-the-jira-cloud-migration-assistant-to-migrate/) or [Jira Site import](https://support.atlassian.com/migration/docs/use-jira-site-import-to-migrate-from-server-to-cloud/) and activated in R4J for both instances.
 * The R4J Folder issue type is correctly configured in the Cloud instance. (See [R4J Folder configurations](https://easesolutions.atlassian.net/wiki/spaces/R4JC/pages/2114388135/Configuration#Folder-Issue-Type) )
